@@ -1,10 +1,12 @@
 {
   "name": "@wns-vote-for-skill/common",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "clean": "del ./lib/*",
     "build": "npm run clean && tsc"
