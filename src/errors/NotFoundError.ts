@@ -1,6 +1,6 @@
 import CustomError from './CustomError';
 
-class NotFoundError extends CustomError {
+export class NotFoundError extends CustomError {
   status = 404;
 
   serializeError(): { status: number; errors: string[] } {
@@ -10,5 +10,3 @@ class NotFoundError extends CustomError {
     };
   }
 }
-
-export default { NotFoundError }
