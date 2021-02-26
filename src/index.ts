@@ -1,7 +1,5 @@
-type Wilder = {
-    name: string,
-    city: string,
-    email: string,
-}
-
-export const helloWilder = (wilder:Wilder) => `Hello ${wilder.name} from ${wilder.city} :) :) :)`
+export * from './middlewares/error';
+export * from './errors/BadRequestError';
+export * from './errors/CustomError';
+export * from './errors/InputError';
+export * from './errors/NotFoundError';
