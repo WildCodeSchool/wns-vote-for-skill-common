@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import CustomError from '../errors/CustomError';
 
-export default (
+const errorMiddleware = (
   error: Error,
   req: Request,
   res: Response,
@@ -19,3 +19,5 @@ export default (
     .status(500)
     .json({ status: 500, errors: ['Something went wrong'] });
 };
+
+export default { errorMiddleware }

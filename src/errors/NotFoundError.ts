@@ -11,4 +11,4 @@ class NotFoundError extends CustomError {
   }
 }
 
-export default NotFoundError;
+export default { NotFoundError }
