@@ -1,7 +1,7 @@
 import { ValidationError } from 'express-validator';
-import CustomError from './CustomError';
+import {CustomError} from './CustomError';
 
-class InputError extends CustomError {
+export class InputError extends CustomError {
   status = 400;
 
   constructor(public validationErrors: ValidationError[]) {
@@ -15,5 +15,3 @@ class InputError extends CustomError {
     };
   }
 }
-
-export default InputError;

@@ -1,6 +1,6 @@
-import CustomError from './CustomError';
+import {CustomError} from './CustomError';
 
-class BadRequestError extends CustomError {
+export class BadRequestError extends CustomError {
   status = 400;
 
   serializeError(): { status: number; errors: string[] } {
@@ -10,5 +10,3 @@ class BadRequestError extends CustomError {
     };
   }
 }
-
-export default BadRequestError;
